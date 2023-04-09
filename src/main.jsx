@@ -5,8 +5,9 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Banner from "./components/Banner/Banner";
-import Features from "./components/Features/Features";
 import Jobs from "./components/Jobs/Jobs";
+import Statistics from "./components/Statistics/Statistics";
+import Blog from "./components/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -14,12 +15,16 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     children: [
       {
-        path: "/banner",
+        path: "/",
         element: <Banner></Banner>,
       },
       {
-        path: "/features",
-        element: <Features></Features>,
+        path: "/statistic",
+        element: <Statistics></Statistics>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
       },
       {
         path: "/jobs",

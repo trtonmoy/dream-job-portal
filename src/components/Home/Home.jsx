@@ -1,12 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Header from "../Header/Header";
+import Banner from "../Banner/Banner";
 
 const Home = () => {
   return (
-    <div className="my-container bg-green-300">
-      <h1 className="text-5xl text-red-600">I am from home</h1>
+    <main className="my-container">
+      <Header></Header>
       <Outlet></Outlet>
-    </div>
+    </main>
   );
 };
 
