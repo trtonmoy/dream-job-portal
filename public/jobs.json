@@ -2,6 +2,7 @@
   {
     "id": "01",
     "brand_logo": "https://www.vhv.rs/dpng/d/521-5214434_become-synonymous-with-the-word-mark-apple-word.png",
+    "company": "Apple Inc",
     "job_title": "Database Developer",
     "job_type": ["Remote", "Full Time"],
     "location": "Chicago USA",
@@ -16,6 +17,7 @@
   {
     "id": "02",
     "brand_logo": "https://w7.pngwing.com/pngs/124/600/png-transparent-microsoft-logo-microsoft-thumbnail.png",
+    "company": "Microsoft Inc",
     "job_title": "DevOps Engineer",
     "job_type": ["Remote", "Full Time"],
     "location": "Chicago USA",
@@ -30,6 +32,7 @@
   {
     "id": "03",
     "brand_logo": "https://e7.pngegg.com/pngimages/518/95/png-clipart-amazon-com-logo-product-brand-trademark-amazon-web-services-logo-text-trademark.png",
+    "company": "Amazon",
     "job_title": "Cloud Solutions Engineer",
     "job_type": ["Remote", "Full Time"],
     "location": "Chicago USA",
@@ -44,6 +47,7 @@
   {
     "id": "04",
     "brand_logo": "https://img.favpng.com/5/6/16/alphabet-inc-google-logo-google-search-png-favpng-BhivcSpEa4sCaVDPwaVDYCiae.jpg",
+    "company": "GoogleLLC",
     "job_title": "Cybersecurity Specialist",
     "job_type": ["Remote", "Full Time"],
     "location": "Chicago USA",
@@ -58,6 +62,7 @@
   {
     "id": "05",
     "brand_logo": "https://e7.pngegg.com/pngimages/41/649/png-clipart-intel-core-i3-logo-transparency-intel-blue-text-thumbnail.png",
+    "company": "Intel Inc",
     "job_title": "Quality Assurance (QA) Engineer",
     "job_type": ["Remote", "Full Time"],
     "location": "Chicago USA",
@@ -72,6 +77,7 @@
   {
     "id": "06",
     "brand_logo": "https://w7.pngwing.com/pngs/1023/252/png-transparent-qualcomm-logo-qualcomm-inc-v-broadcom-corp-qualcomm-inc-v-broadcom-corp-company-smartphone-qualcomm-logo-blue-text-banner.png",
+    "company": "Qualcomm",
     "job_title": "Embedded Systems Engineer",
     "job_type": ["Remote", "Full Time"],
     "location": "Chicago USA",
