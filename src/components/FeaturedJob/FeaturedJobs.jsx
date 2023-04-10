@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedJobs = ({ job }) => {
-  const { brand_logo, job_title, job_type, company, location, salary } = job;
+  const { id, brand_logo, job_title, job_type, company, location, salary } =
+    job;
+
+  
 
   return (
     <section className="p-3 border rounded m-4">
@@ -17,7 +21,12 @@ const FeaturedJobs = ({ job }) => {
         <p> {location} </p>
         <p> {salary} </p>
       </div>
-      <button className="btn m-2">View Details</button>
+
+      <Link to={`/${id}`}>
+        <button className="btn m-2">
+          View Details
+        </button>
+      </Link>
     </section>
   );
 };
