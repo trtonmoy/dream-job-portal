@@ -77,7 +77,7 @@ const Banner = () => {
       <h6 className="text-center text-xl m-2 mb-12">
         Employment Hub: Explore a Wide Range of Job Opportunities
       </h6>
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-8">
         {jobs.map((job) => (
           <FeaturedJobs key={job.id} job={job}></FeaturedJobs>
         ))}

@@ -1,16 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import {
+  addToDb,
+  getShoppingCart,
+} from "../../../../../ema-john/public/utilities/fakedb";
 
 const JobDetails = () => {
   const jobDetails = useParams();
 
   const [details, setDetails] = useState("");
+  const [appliedJob, setAppliedJob] = useState([]);
+  const savedList = [];
 
   useEffect(() => {
     fetch("jobs.json")
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
+
+  useEffect(() => {
+    const appliedJobsList = getShoppingCart();
+    for (const id in appliedJobsList) {
+      const addedJob = details && details.find((job) => job.id === id);
+      if (addedJob) {
+        savedList.push(addedJob);
+      }
+    }
+    setAppliedJob(savedList);
+  }, [details]);
+
+  const handleApplyJob = (job) => {
+    const newJob = [...appliedJob, job];
+    setAppliedJob(newJob);
+    addToDb(job.id);
+  };
 
   const pd = details && details.find((job) => job.id === jobDetails.id);
   const {
@@ -83,7 +106,9 @@ const JobDetails = () => {
             <h5>Address :</h5>
             <p> {location} </p>
           </div>
-          <button className="btn">Apply Now</button>
+          <button onClick={() => handleApplyJob(pd)} className="btn mt-6">
+            Apply Now
+          </button>
         </div>
       </section>
     </section>
