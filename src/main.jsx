@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Banner from "./components/Banner/Banner";
+import Banner from "./components/HomePage/HomePage";
 import Jobs from "./components/Jobs/Jobs";
 import Statistics from "./components/Statistics/Statistics";
 import Blog from "./components/Blog/Blog";
@@ -17,7 +17,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Banner></Banner>,
-        loader: () => fetch('jobs.json')
+        loader: () => fetch("jobs.json"),
+        // loader: () => fetch("category.json"),
       },
       {
         path: "/statistic",

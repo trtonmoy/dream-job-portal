@@ -9,8 +9,9 @@ const FeaturedJobs = ({ job }) => {
       <h4> {job_title} </h4>
       <p> {company} </p>
       <div className="lg:flex gap-6">
-        <p className="p-1 rounded border"> {job_type[0]} </p>
-        <p className="p-1 rounded border"> {job_type[1]} </p>
+        {job_type.map((job, idx) => (
+          <p key={idx}> {job} </p>
+        ))}
       </div>
       <div className="lg:flex gap-6">
         <p> {location} </p>

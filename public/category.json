@@ -1,0 +1,26 @@
+[
+  {
+    "id": "01",
+    "image": "../src/assets/software-svgrepo-com.svg",
+    "title": "Software Engineer",
+    "vacancy": "250+ Jobs Available"
+  },
+  {
+    "id": "02",
+    "image": "../src/assets/human-resources-hiring-svgrepo-com.svg",
+    "title": "Human Resources and Talent Acquisition",
+    "vacancy": "200+ Jobs Available"
+  },
+  {
+    "id": "03",
+    "image": "../src/assets/building-4-svgrepo-com.svg",
+    "title": "Operations and Project Management",
+    "vacancy": "150+ Jobs Available"
+  },
+  {
+    "id": "04",
+    "image": "../src/assets/data-trends-svgrepo-com.svg",
+    "title": "Data Science and Analytics",
+    "vacancy": "100+ Jobs Available"
+  }
+]
