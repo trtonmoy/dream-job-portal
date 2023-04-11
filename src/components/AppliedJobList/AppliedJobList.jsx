@@ -10,7 +10,11 @@ const AppliedJobList = ({ job }) => {
   return (
     <div className=" lg:flex lg:items-center lg:justify-between mx-2 my-6 p-4 border rounded">
       <div className="lg:flex gap-8 lg:items-center">
-        <img className="w-52 h-36" src={brand_logo} alt="Brand Logo" />
+        <img
+          className="w-52 h-36 text-center bg-slate-100 p-4 rounded"
+          src={brand_logo}
+          alt="Brand Logo"
+        />
         <div>
           <div>
             <h4 className="font-bold tracking-wide my-1 text-purple-900 text-2xl">

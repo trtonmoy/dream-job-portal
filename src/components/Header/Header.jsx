@@ -10,11 +10,11 @@ import {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-gray-100 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="bg-purple-100 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
         {/* Logo Section */}
         <Link to="/" className="inline-flex items-center">
-          <BriefcaseIcon className="h-6 w-6 text-blue-500" />
+          <BriefcaseIcon className="h-6 w-6 text-purple-500" />
           <span className="ml-2 text-2xl font-bold tracking-wide text-gray-800">
             Elite Employment
           </span>

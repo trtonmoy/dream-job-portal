@@ -56,7 +56,13 @@ const JobDetails = () => {
   } = pd;
 
   return (
-    <section>
+    <section
+      className="bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://media.istockphoto.com/id/1369274625/vector/abstract-diagonal-lines-white-background-with-smooth-stripes-minimal-website-backdrop.jpg?s=612x612&w=0&k=20&c=TEN1TaY7nkekMC5HbE6-F1T5Pe96bLx-Tu2Dugy3SYE=')",
+      }}
+    >
       <div
         className="bg-cover bg-center h-3/4 p-16 opacity-60 text-purple-950 relative"
         style={{
@@ -65,7 +71,9 @@ const JobDetails = () => {
         }}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-purple-950 opacity-20"></div>
-        <h1 className="text-center text-5xl font-bold ">Job Details</h1>
+        <h1 className="text-center text-5xl font-bold ">
+          Employment Information
+        </h1>
       </div>
 
       <section className="py-20 px-8 border lg:flex justify-between">
@@ -101,8 +109,8 @@ const JobDetails = () => {
           </p>
         </div>
         <div className="bg-slate-200 p-3 lg:w-[35%] pl-8">
-          <h2 className="ml-5 font-bold text-3xl text-slate-800 my-3">
-            Job Details
+          <h2 className=" font-bold text-3xl text-slate-800 my-3">
+            Employment Information
           </h2>
           <hr className="border border-slate-400 my-3" />
           <div className="lg:flex lg:items-center my-2">

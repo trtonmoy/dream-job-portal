@@ -5,7 +5,7 @@ const CategoryJobs = ({ category }) => {
   return (
     <section className="bg-indigo-50 w-60 h-52 m-4 p-3 rounded border">
       <img
-        className="text-indigo-400 bg-slate-200 p-2 w-20 h-20 rounded "
+        className=" bg-slate-300 p-3 w-20 h-20 rounded "
         src={image}
         alt="Category-Image"
       />

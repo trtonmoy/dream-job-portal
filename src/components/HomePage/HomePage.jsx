@@ -36,9 +36,6 @@ const Banner = () => {
         {/* Text Content */}
         <div className="mb-10 m-6 lg:max-w-lg  lg:pr-5 lg:mb-0">
           <div className="max-w-xl mb-6 lg:mt-8">
-            <div>
-              <p className="badge">On Sale!</p>
-            </div>
             <h2 className="max-w-lg mb-6 font-sans  font-bold tracking-wide lg:leading-snug text-gray-900 sm:text-4xl sm:leading-none">
               Advancing on Your Path <br className="hidden md:block" /> to
               Achieving Your
@@ -75,8 +72,8 @@ const Banner = () => {
       </section>
 
       {/* Category */}
-      <h1 className="text-center font-bold tracking-wide text-4xl mt-44 mb-2">
-        Job Category List
+      <h1 className="text-center text-slate-700 font-bold tracking-wide text-4xl mt-44 mb-2">
+        Field of Work List
       </h1>
       <h6 className="text-center text-xl font-semibold text-slate-500 m-2 mb-12">
         Career Cosmos: Embarking on a Broad Job Category Exploration
@@ -88,8 +85,8 @@ const Banner = () => {
       </section>
 
       {/* Featured Jobs */}
-      <h1 className="text-center font-bold tracking-wide text-4xl mt-20 mb-3">
-        Featured Jobs
+      <h1 className="text-center text-slate-700 font-bold tracking-wide text-4xl mt-20 mb-3">
+        Spotlighted Opportunities
       </h1>
       <h6 className="text-center text-xl text-slate-500 font-semibold m-2 mb-12">
         Employment Hub: Explore a Wide Range of Job Opportunities
@@ -104,7 +101,9 @@ const Banner = () => {
           onClick={handleShowAll}
           className={`${isHidden ? "hidden" : "block"}`}
         >
-          <button className="btn">See All</button>
+          <button className="border rounded text-white text-xl bg-purple-800 hover:bg-purple-700 px-8 py-4 font-bold tracking-wide">
+            See More
+          </button>
         </span>
       </div>
     </section>

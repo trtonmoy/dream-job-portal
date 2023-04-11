@@ -1,7 +1,7 @@
 [
   {
     "id": "01",
-    "brand_logo": "https://www.vhv.rs/dpng/d/521-5214434_become-synonymous-with-the-word-mark-apple-word.png",
+    "brand_logo": "https://cdn.freebiesupply.com/logos/thumbs/2x/apple-10-logo.png",
     "company": "Apple Inc",
     "job_title": "Database Developer",
     "job_type": ["Remote", "Full Time"],
@@ -17,7 +17,7 @@
   },
   {
     "id": "02",
-    "brand_logo": "https://w7.pngwing.com/pngs/124/600/png-transparent-microsoft-logo-microsoft-thumbnail.png",
+    "brand_logo": "https://www.clipartmax.com/png/full/191-1910276_microsoft-office-png-logo-free-transparent-png-logos-microsoft-office-transparent-background.png",
     "company": "Microsoft Inc",
     "job_title": "DevOps Engineer",
     "job_type": ["Full Time", "Remote"],
@@ -33,7 +33,7 @@
   },
   {
     "id": "03",
-    "brand_logo": "https://e7.pngegg.com/pngimages/518/95/png-clipart-amazon-com-logo-product-brand-trademark-amazon-web-services-logo-text-trademark.png",
+    "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
     "company": "Amazon",
     "job_title": "Cloud Solutions Engineer",
     "job_type": ["Remote", "Full Time"],
@@ -49,7 +49,7 @@
   },
   {
     "id": "04",
-    "brand_logo": "https://img.favpng.com/5/6/16/alphabet-inc-google-logo-google-search-png-favpng-BhivcSpEa4sCaVDPwaVDYCiae.jpg",
+    "brand_logo": "https://purepng.com/public/uploads/large/purepng.com-alphabet-logologobrand-logoiconslogos-251519939572ylr4l.png",
     "company": "GoogleLLC",
     "job_title": "Cybersecurity Specialist",
     "job_type": ["Remote", "Full Time"],
@@ -65,7 +65,7 @@
   },
   {
     "id": "05",
-    "brand_logo": "https://e7.pngegg.com/pngimages/41/649/png-clipart-intel-core-i3-logo-transparency-intel-blue-text-thumbnail.png",
+    "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Intel_logo_%282006-2020%29.svg/800px-Intel_logo_%282006-2020%29.svg.png",
     "company": "Intel Inc",
     "job_title": "Quality Assurance (QA) Engineer",
     "job_type": ["Full Time", "Remote"],
@@ -81,7 +81,7 @@
   },
   {
     "id": "06",
-    "brand_logo": "https://w7.pngwing.com/pngs/1023/252/png-transparent-qualcomm-logo-qualcomm-inc-v-broadcom-corp-qualcomm-inc-v-broadcom-corp-company-smartphone-qualcomm-logo-blue-text-banner.png",
+    "brand_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Qualcomm-Logo.svg/1280px-Qualcomm-Logo.svg.png",
     "company": "Qualcomm",
     "job_title": "Embedded Systems Engineer",
     "job_type": ["Full Time", "Remote"],

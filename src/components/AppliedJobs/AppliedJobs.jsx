@@ -28,7 +28,7 @@ const AppliedJobs = () => {
       >
         <div className="absolute top-0 left-0 w-full h-full bg-purple-950 opacity-20"></div>
         <h1 className="text-purple-900 text-center text-5xl font-bold">
-          Applied Jobs
+          Job Application Records
         </h1>
       </div>
 
@@ -37,7 +37,7 @@ const AppliedJobs = () => {
           onClick={() => handleFullTimeJobs("onsite")}
           className="border border-purple-400 rounded px-3 text-purple-500 font-semibold px=3 py-2 mr-3"
         >
-          <button>Full Time</button>
+          <button>Onsite</button>
         </p>
         <p
           onClick={() => handleRemoteJobs("remote")}
