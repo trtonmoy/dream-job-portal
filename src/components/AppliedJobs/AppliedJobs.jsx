@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { getShoppingCart } from "../../../../../ema-john/public/utilities/fakedb";
 import AppliedJobList from "../AppliedJobList/AppliedJobList";
 import { useLoaderData } from "react-router-dom";
 

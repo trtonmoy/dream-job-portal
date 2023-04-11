@@ -4,6 +4,13 @@ import {
   addToDb,
   getShoppingCart,
 } from "../../../../../ema-john/public/utilities/fakedb";
+import {
+  CurrencyDollarIcon,
+  BriefcaseIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+  MapPinIcon,
+} from "@heroicons/react/24/solid";
 
 const JobDetails = () => {
   const jobDetails = useParams();
@@ -61,50 +68,85 @@ const JobDetails = () => {
         <h1 className="text-center text-5xl font-bold ">Job Details</h1>
       </div>
 
-      <section className="py-20 px-8 bg-amber-200 border lg:flex justify-between">
+      <section className="py-20 px-8 border lg:flex justify-between">
         <div className="lg:w-[60%]">
-          <span>
-            <h3>Job Description : </h3> {job_description}{" "}
+          <span className="font-semibold text-xl text-slate-500 ">
+            <h3 className="font-bold text-2xl text-slate-800">
+              Job Description :{" "}
+            </h3>{" "}
+            {job_description}{" "}
           </span>
           <br />
           <br />
-          <span>
-            <h3>Job Responsibility :</h3> {job_responsibility}{" "}
+          <span className="font-semibold text-xl text-slate-500 ">
+            <h3 className="font-bold text-2xl text-slate-800">
+              Job Responsibility :
+            </h3>{" "}
+            {job_responsibility}{" "}
           </span>
           <br />
           <br />
-          <span>
-            <h3>Educational Requirements :</h3> {educational_expectation}{" "}
+          <span className="font-semibold text-xl text-slate-500 ">
+            <h3 className="font-bold text-2xl text-slate-800">
+              Educational Requirements :
+            </h3>{" "}
+            {educational_expectation}{" "}
           </span>
           <br />
           <br />
-          <h4>Experience</h4>
-          <p> {experience} </p>
+          <h4 className="font-bold text-2xl text-slate-800">Experience</h4>
+          <p className="font-semibold text-xl text-slate-500 ">
+            {" "}
+            {experience}{" "}
+          </p>
         </div>
-        <div className="bg-slate-200 p-3 lg:w-[35%] ">
-          <h2>Job Details</h2>
-          <hr />
-          <div>
-            <h5>Salary:</h5>
-            <p> {salary} per Month </p>
+        <div className="bg-slate-200 p-3 lg:w-[35%] pl-8">
+          <h2 className="ml-5 font-bold text-3xl text-slate-800 my-3">
+            Job Details
+          </h2>
+          <hr className="border border-slate-400 my-3" />
+          <div className="lg:flex lg:items-center my-2">
+            <div className="lg:flex lg:justify-evenly lg:items-center gap-2">
+              <CurrencyDollarIcon className="w-5 text-purple-500" />
+              <h5 className="font-semibold text-slate-600 mr-1 text-xl">
+                Salary :
+              </h5>
+            </div>
+            <p className="text-slate-500 font-medium text-lg">
+              {" "}
+              {salary} per Month{" "}
+            </p>
           </div>
-          <div>
-            <h5>Job Title :</h5>
-            <p> {job_title} </p>
+          <div className="lg:flex gap-3 lg:items-center my-2">
+            <BriefcaseIcon className="w-5 text-purple-500" />
+            <h5 className="font-semibold text-slate-600 mr-1 text-xl">
+              Job Title :
+            </h5>
+            <p className="text-slate-500 font-medium text-lg"> {job_title} </p>
           </div>
-          <h2>Contact Information</h2>
-          <hr />
-          <div>
-            <h5>Phone</h5>
-            <p> {phone} </p>
+          <h2 className="ml-5 font-bold text-3xl text-slate-800 mt-12 my-3">
+            Contact Information
+          </h2>
+          <hr className="border border-slate-400 my-3" />
+          <div className="lg:flex gap-3 lg:items-center my-2">
+            <PhoneIcon className="w-5 text-purple-500" />
+            <h5 className="font-semibold text-slate-600 mr-1 text-xl">Phone</h5>
+            <p className="text-slate-500 font-medium text-lg"> {phone} </p>
           </div>
-          <div>
-            <h5> Email :</h5>
-            <p> {email} </p>
+          <div className="lg:flex gap-3 lg:items-center my-2">
+            <EnvelopeIcon className="w-5 text-purple-500" />
+            <h5 className="font-semibold text-slate-600 mr-1 text-xl">
+              {" "}
+              Email :
+            </h5>
+            <p className="text-slate-500 font-medium text-lg"> {email} </p>
           </div>
-          <div>
-            <h5>Address :</h5>
-            <p> {location} </p>
+          <div className="lg:flex gap-3 lg:items-center my-2">
+            <MapPinIcon className="w-5 text-purple-500" />
+            <h5 className="font-semibold text-slate-600 mr-1 text-xl">
+              Address :
+            </h5>
+            <p className="text-slate-500 font-medium text-lg"> {location} </p>
           </div>
           <button onClick={() => handleApplyJob(pd)} className="btn mt-6">
             Apply Now

@@ -1,8 +1,10 @@
 import React from "react";
 import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const AppliedJobList = ({ job }) => {
-  const { brand_logo, job_title, job_type, company, location, salary } = job;
+  const { id, brand_logo, job_title, job_type, company, location, salary } =
+    job;
 
   return (
     <div className=" lg:flex lg:items-center lg:justify-between mx-2 my-6 p-4 border rounded">
@@ -11,21 +13,18 @@ const AppliedJobList = ({ job }) => {
         <div>
           <div>
             <h4 className="font-bold tracking-wide my-1 text-purple-900 text-2xl">
-              {" "}
-              {job_title}{" "}
+              {job_title}
             </h4>
             <h5 className="font-medium tracking-wide text-xl my-1 text-slate-500">
-              {" "}
-              {company}{" "}
+              {company}
             </h5>
-            <div className="lg:flex gap-3 my-1">
+            <div className="lg:flex lg:items-center gap-3 my-1">
               <p className="rounded border border-purple-400 px-3 py-1">
                 {" "}
                 {job_type[0]}{" "}
               </p>
               <p className="rounded border border-purple-400 my-1 px-3 py-1">
-                {" "}
-                {job_type[1]}{" "}
+                {job_type[1]}
               </p>
             </div>
             <div className="lg:flex mt-2 gap-3">
@@ -47,7 +46,9 @@ const AppliedJobList = ({ job }) => {
         </div>
       </div>
       <div>
-        <button className="btn">View Details</button>
+        <Link to={`/${id}`}>
+          <button className="btn m-2">View Details</button>
+        </Link>
       </div>
     </div>
   );

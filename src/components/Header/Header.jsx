@@ -15,13 +15,13 @@ const Header = () => {
         {/* Logo Section */}
         <Link to="/" className="inline-flex items-center">
           <BriefcaseIcon className="h-6 w-6 text-blue-500" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
+          <span className="ml-2 text-2xl font-bold tracking-wide text-gray-800">
             Elite Employment
           </span>
         </Link>
 
         {/* Nav Items Section */}
-        <ul className="items-center hidden space-x-8 lg:flex">
+        <ul className="items-center text-xl hidden space-x-8 lg:flex">
           <li>
             <NavLink
               to="/"
