@@ -11,6 +11,7 @@ import JobDetails from "./components/JobDetails/JobDetails";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import savedJobs from "./loader/loader";
 import Error from "./components/Error/Error";
+import Spinner from "./components/Spinner/Spinner";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       {
         path: "/statistic",
         element: <Statistics></Statistics>,
+        loader: () => fetch("assignmentMarks.json"),
       },
       {
         path: "/blog",
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
         path: "/jobs",
         element: <AppliedJobs></AppliedJobs>,
         loader: savedJobs,
+      },
+      {
+        path: "/loader",
+        element: <Spinner></Spinner>,
       },
     ],
   },
