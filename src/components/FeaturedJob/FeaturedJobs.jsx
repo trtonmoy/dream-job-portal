@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
 

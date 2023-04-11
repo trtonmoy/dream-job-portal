@@ -1,23 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useNavigation } from "react-router-dom";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
-import Spinner from "../Spinner/Spinner";
 
 const Statistics = () => {
   const [marks, setMarks] = useState([]);
-
-  const navigation = useNavigation();
-  {
-    navigation.state === "loading" && <Spinner></Spinner>;
-  }
 
   useEffect(() => {
     fetch("assignmentMarks.json")
       .then((res) => res.json())
       .then((data) => setMarks(data));
   }, []);
-
-  // const marks = useLoaderData();
 
   const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${

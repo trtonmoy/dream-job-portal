@@ -2,7 +2,9 @@ import { useState } from "react";
 import AppliedJobList from "../AppliedJobList/AppliedJobList";
 import { useLoaderData } from "react-router-dom";
 
+
 const AppliedJobs = () => {
+
   const appliedJob = useLoaderData();
 
   const [jobs, setJobs] = useState(appliedJob);

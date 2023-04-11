@@ -54,6 +54,14 @@ const Header = () => {
               Statistics
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/loader"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              <span className="btn">Start Apply</span>
+            </NavLink>
+          </li>
         </ul>
         {/* Mobile Navbar Section */}
         <div className="lg:hidden">

@@ -4,7 +4,6 @@ import Lottie from "lottie-react";
 import { Link, useLoaderData, useNavigation } from "react-router-dom";
 import FeaturedJobs from "../FeaturedJob/FeaturedJobs";
 import CategoryJobs from "../CategoryJob/CategoryJobs";
-import Spinner from "../Spinner/Spinner";
 
 const Banner = () => {
   const [categories, setCategories] = useState([]);
@@ -18,10 +17,6 @@ const Banner = () => {
     setIsHidden(true);
   };
 
-  const navigation = useNavigation();
-  {
-    navigation.state === "loading" && <Spinner></Spinner>;
-  }
 
   useEffect(() => {
     fetch("category.json")
