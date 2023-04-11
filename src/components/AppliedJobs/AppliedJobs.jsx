@@ -5,19 +5,17 @@ import { useLoaderData } from "react-router-dom";
 const AppliedJobs = () => {
   const appliedJob = useLoaderData();
 
-  // const [jobs, setJobs] = useState([appliedJob]);
+  const [jobs, setJobs] = useState(appliedJob);
 
-  // const handleRemoteJobs = () => {
-  //   const remoteJobs = appliedJob.filter((job) => console.log(job));
-  //   setJobs(remoteJobs);
-  // };
+  const handleRemoteJobs = (type) => {
+    const remoteJobs = appliedJob.filter((job) => job.work_site === type);
+    setJobs(remoteJobs);
+  };
 
-  // const handleFullTimeJobs = () => {
-  //   const fullTimeJobs = appliedJob.filter(
-  //     (job) => job.job_type[1] === "Full Time"
-  //   );
-  //   setJobs(fullTimeJobs);
-  // };
+  const handleFullTimeJobs = (type) => {
+    const fullTimeJobs = appliedJob.filter((job) => job.work_site === type);
+    setJobs(fullTimeJobs);
+  };
 
   return (
     <section>
@@ -36,22 +34,22 @@ const AppliedJobs = () => {
 
       <div className="lg:flex lg:justify-end my-6">
         <p
-          // onClick={handleFullTimeJobs}
-          className="border rounded px-3 px=3 py-2 mr-3"
+          onClick={() => handleFullTimeJobs("onsite")}
+          className="border border-purple-400 rounded px-3 text-purple-500 font-semibold px=3 py-2 mr-3"
         >
           <button>Full Time</button>
         </p>
         <p
-          // onClick={handleRemoteJobs}
-          className="border rounded px-3 px=3 py-2 mr-3"
+          onClick={() => handleRemoteJobs("remote")}
+          className="border border-purple-400 font-semibold text-purple-500 rounded px-3 px=3 py-2 mr-3"
         >
           <button>Remote</button>
         </p>
       </div>
 
       <div className="mt-8 p-4">
-        {appliedJob &&
-          appliedJob.map((gig) => (
+        {jobs &&
+          jobs.map((gig) => (
             <AppliedJobList key={gig.id} job={gig}></AppliedJobList>
           ))}
       </div>
