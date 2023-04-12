@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
+import {
+  BarChart,
+  Bar,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  ResponsiveContainer,
+} from "recharts";
 
 const Statistics = () => {
   const [marks, setMarks] = useState([]);
@@ -40,38 +48,53 @@ const Statistics = () => {
   };
 
   return (
-    <section className="border border-purple-400 bg-purple-100 p-10 lg:flex lg:justify-center lg:items-center">
-      <div>
-        <h1 className="my-8 text-4xl text-purple-900 font-semibold text-center">
-          A chart of my Assignment Marks{" "}
+    <section>
+      <div
+        className="bg-cover bg-center h-3/4 p-16 relative"
+        style={{
+          backgroundImage:
+            "url('https://images.pexels.com/photos/3637943/pexels-photo-3637943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+        }}
+      >
+        <div className="absolute top-0 left-0 w-full h-full bg-purple-950 opacity-20"></div>
+        <h1 className="text-purple-900 text-center text-5xl font-bold">
+          Figures
         </h1>
-        <hr className="border border-purple-800 mb-8" />
-        <BarChart
-          width={1000}
-          height={500}
-          data={marks}
-          margin={{
-            top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="assignNo" />
-          <YAxis />
-          <Bar
-            dataKey="assignMark"
-            fill="#8884d8"
-            shape={<TriangleBar />}
-            label={{ position: "top" }}
-          >
-            {marks.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-            ))}
-          </Bar>
-        </BarChart>
       </div>
+      <section className=" bg-purple-100 p-10 lg:flex lg:justify-center lg:items-center">
+        <div>
+          <h1 className="my-8 text-4xl text-purple-900 font-semibold text-center">
+            A chart of my Assignment Marks{" "}
+          </h1>
+          <hr className="border border-purple-800 mb-8" />
+
+          <BarChart
+            width={1000}
+            height={500}
+            data={marks}
+            margin={{
+              top: 20,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="assignNo" />
+            <YAxis />
+            <Bar
+              dataKey="assignMark"
+              fill="#8884d8"
+              shape={<TriangleBar />}
+              label={{ position: "top" }}
+            >
+              {marks.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+              ))}
+            </Bar>
+          </BarChart>
+        </div>
+      </section>
     </section>
   );
 };

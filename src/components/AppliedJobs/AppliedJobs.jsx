@@ -2,9 +2,7 @@ import { useState } from "react";
 import AppliedJobList from "../AppliedJobList/AppliedJobList";
 import { useLoaderData } from "react-router-dom";
 
-
 const AppliedJobs = () => {
-
   const appliedJob = useLoaderData();
 
   const [jobs, setJobs] = useState(appliedJob);
@@ -28,7 +26,7 @@ const AppliedJobs = () => {
             "url('https://png.pngtree.com/background/20210711/original/pngtree-simple-fashion-creative-design-banner-poster-background-picture-image_1128613.jpg')",
         }}
       >
-        <div className="absolute top-0 left-0 w-full h-full bg-purple-950 opacity-20"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-purple-950 opacity-10"></div>
         <h1 className="text-purple-900 text-center text-5xl font-bold">
           Job Application Records
         </h1>
