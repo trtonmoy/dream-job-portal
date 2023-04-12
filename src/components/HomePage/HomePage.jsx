@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import coder from "../../assets/71619-coding.json";
+import coder from "../../../public/assets/71619-coding.json";
 import Lottie from "lottie-react";
 import { Link, useLoaderData, useNavigation } from "react-router-dom";
 import FeaturedJobs from "../FeaturedJob/FeaturedJobs";
@@ -16,7 +16,6 @@ const Banner = () => {
     setShowAll(true);
     setIsHidden(true);
   };
-
 
   useEffect(() => {
     fetch("category.json")
