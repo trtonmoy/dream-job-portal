@@ -35,13 +35,13 @@ const AppliedJobs = () => {
       <div className="lg:flex lg:justify-end my-6">
         <p
           onClick={() => handleFullTimeJobs("onsite")}
-          className="border border-purple-400 rounded px-3 text-purple-500 font-semibold px=3 py-2 mr-3"
+          className="border border-purple-400 text-lg rounded px-3 text-purple-600 font-semibold px=3 py-2 mr-3"
         >
           <button>Onsite</button>
         </p>
         <p
           onClick={() => handleRemoteJobs("remote")}
-          className="border border-purple-400 font-semibold text-purple-500 rounded px-3 px=3 py-2 mr-3"
+          className="border border-purple-400 text-lg font-semibold text-purple-600 rounded px-3 px=3 py-2 mr-3"
         >
           <button>Remote</button>
         </p>
